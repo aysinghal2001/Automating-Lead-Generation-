@@ -21,18 +21,20 @@ context
     visitedNodeQuestion1: boolean = false;
 }
 
-/**
-Perfect world conversation flow begins 
-*/
+start node root {
+    do {
+        #connectSafe($phone);
+        wait *;
+    }
+    transitions {
+        hello: goto hello on true;        
+    }
+}
 
-start node root
+node hello
 {
     do
     {
-        #preparePhrase("greeting", {name:$name}); 
-        #connectSafe($phone);
-        // Wait for 5 seconds or until speech is detected.
-        #waitForSpeech(1000);
         #sayText("Hi " + $name + " this is Dasha with ACME. Thank you so much for reaching out to us on our website.");
         #sayText("Is it okay if I ask you a few questions?");
         wait*;
@@ -85,7 +87,8 @@ node question_2
 {
     do 
     {
-        #sayText("Thank you for that. Question 2 - how many invoices per month do you generally issue?");
+        set $software = "not using any invoicing software now";
+        #sayText("Thank you for that. Question 2. How many invoices per month do you generally issue?");
         wait *;
     }
     transitions 
@@ -105,7 +108,7 @@ node question_3
 {
     do 
     {
-        #sayText("Thank you. And final question - how did you find out about us?");
+        #sayText("Thank you. And final question. How did you find out about us?");
         wait *;
     }
     transitions 

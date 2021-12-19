@@ -1,0 +1,360 @@
+####################################################################################################
+human: 
+[
+  {
+    "type": "Intent",
+    "skill": "common_phrases",
+    "weight": -1,
+    "likelihood": -1,
+    "location": {
+      "start": 0,
+      "end": 0
+    },
+    "intent": "ping",
+    "state": "positive",
+    "sentenceType": "statement"
+  },
+  {
+    "type": "Intent",
+    "skill": "sentiment",
+    "weight": -1,
+    "likelihood": -1,
+    "location": {
+      "start": 0,
+      "end": 0
+    },
+    "intent": null,
+    "state": "neutral",
+    "sentenceType": "statement"
+  }
+]
+human: hello
+ai: Hi  this is Dasha from EduTekZila support. Thank you so much for reaching out to us on our website.
+ai: Is it okay if I ask you a few questions?
+[
+  {
+    "type": "Intent",
+    "skill": "sentiment",
+    "weight": -1,
+    "likelihood": -1,
+    "location": {
+      "start": 0,
+      "end": 0
+    },
+    "intent": null,
+    "state": "positive",
+    "sentenceType": "statement"
+  },
+  {
+    "type": "Intent",
+    "skill": "c56b26c18ac7f9edc41101bb14a31257:v2",
+    "weight": 0.99999,
+    "likelihood": 1,
+    "location": {
+      "start": -1,
+      "end": -1
+    },
+    "intent": "yes",
+    "state": "positive",
+    "sentenceType": "statement"
+  }
+]
+human: yes
+ai: Great! Do you have a website or an applicatio for your business?
+[
+  {
+    "type": "Intent",
+    "skill": "sentiment",
+    "weight": -1,
+    "likelihood": -1,
+    "location": {
+      "start": 0,
+      "end": 0
+    },
+    "intent": null,
+    "state": "negative",
+    "sentenceType": "statement"
+  },
+  {
+    "type": "Intent",
+    "skill": "c56b26c18ac7f9edc41101bb14a31257:v2",
+    "weight": 0.98276,
+    "likelihood": 1,
+    "location": {
+      "start": -1,
+      "end": -1
+    },
+    "intent": "no",
+    "state": "positive",
+    "sentenceType": "statement"
+  }
+]
+human: nope
+ai: Thank you for that. Question 2. How many invoices per month do you generally issue for your business?
+[
+  {
+    "type": "Data",
+    "skill": "common-numbers",
+    "weight": -1,
+    "likelihood": -1,
+    "location": {
+      "start": 0,
+      "end": 0
+    },
+    "factType": "numberword",
+    "data": {
+      "value": "25"
+    }
+  },
+  {
+    "type": "Intent",
+    "skill": "sentiment",
+    "weight": -1,
+    "likelihood": -1,
+    "location": {
+      "start": 0,
+      "end": 0
+    },
+    "intent": null,
+    "state": "neutral",
+    "sentenceType": "statement"
+  }
+]
+human: 25
+ai: Thank you. And final question. How did you find out about us?
+[
+  {
+    "type": "Data",
+    "skill": "c56b26c18ac7f9edc41101bb14a31257:v2",
+    "weight": 0.86835,
+    "likelihood": 1,
+    "location": {
+      "start": 25,
+      "end": 40
+    },
+    "factType": "channel",
+    "data": {
+      "value": "any of us here."
+    }
+  },
+  {
+    "type": "Intent",
+    "skill": "sentiment",
+    "weight": -1,
+    "likelihood": -1,
+    "location": {
+      "start": 0,
+      "end": 9
+    },
+    "intent": null,
+    "state": "positive",
+    "sentenceType": "statement"
+  },
+  {
+    "type": "Intent",
+    "skill": "common_phrases",
+    "weight": -1,
+    "likelihood": -1,
+    "location": {
+      "start": 8,
+      "end": 9
+    },
+    "intent": "may_continue",
+    "state": "positive",
+    "sentenceType": "statement"
+  }
+]
+human: I want you to connect to any of us here.
+ai: Great, thank you for your replies. Now, let's find a time to meet. When are you available for a 30 minute call this week?
+[
+  {
+    "type": "Intent",
+    "skill": "sentiment",
+    "weight": -1,
+    "likelihood": -1,
+    "location": {
+      "start": 0,
+      "end": 0
+    },
+    "intent": null,
+    "state": "positive",
+    "sentenceType": "statement"
+  },
+  {
+    "type": "Intent",
+    "skill": "c56b26c18ac7f9edc41101bb14a31257:v2",
+    "weight": 0.99929,
+    "likelihood": 1,
+    "location": {
+      "start": -1,
+      "end": -1
+    },
+    "intent": "yes",
+    "state": "positive",
+    "sentenceType": "statement"
+  }
+]
+human: Yeah.
+ai: Could you say it one more time?
+[
+  {
+    "type": "Data",
+    "skill": "c56b26c18ac7f9edc41101bb14a31257:v2",
+    "weight": 0.55614,
+    "likelihood": 1,
+    "location": {
+      "start": 10,
+      "end": 18
+    },
+    "factType": "callday",
+    "data": {
+      "value": "Thursday"
+    }
+  },
+  {
+    "type": "Intent",
+    "skill": "sentiment",
+    "weight": -1,
+    "likelihood": -1,
+    "location": {
+      "start": 0,
+      "end": 3
+    },
+    "intent": null,
+    "state": "neutral",
+    "sentenceType": "question"
+  }
+]
+human: how about thursday at
+ai: Perfect. Let's confirm, you can take a call on Thursday at  is that right?
+[
+  {
+    "type": "Data",
+    "skill": "common-numbers",
+    "weight": -1,
+    "likelihood": -1,
+    "location": {
+      "start": 0,
+      "end": 0
+    },
+    "factType": "numberword",
+    "data": {
+      "value": "9"
+    }
+  },
+  {
+    "type": "Data",
+    "skill": "c56b26c18ac7f9edc41101bb14a31257:v2",
+    "weight": 0.3186,
+    "likelihood": 1,
+    "location": {
+      "start": 0,
+      "end": 1
+    },
+    "factType": "calltime",
+    "data": {
+      "value": "9 am"
+    }
+  },
+  {
+    "type": "Intent",
+    "skill": "sentiment",
+    "weight": -1,
+    "likelihood": -1,
+    "location": {
+      "start": 0,
+      "end": 0
+    },
+    "intent": null,
+    "state": "neutral",
+    "sentenceType": "statement"
+  }
+]
+human: 9
+ai: Sorry, I didn't quite catch that.
+[
+  {
+    "type": "Data",
+    "skill": "common-numbers",
+    "weight": -1,
+    "likelihood": -1,
+    "location": {
+      "start": 2,
+      "end": 2
+    },
+    "factType": "numberword",
+    "data": {
+      "value": "9"
+    }
+  },
+  {
+    "type": "Data",
+    "skill": "common-numbers",
+    "weight": -1,
+    "likelihood": -1,
+    "location": {
+      "start": 3,
+      "end": 3
+    },
+    "factType": "numberword",
+    "data": {
+      "value": "0"
+    }
+  },
+  {
+    "type": "Data",
+    "skill": "c56b26c18ac7f9edc41101bb14a31257:v2",
+    "weight": 0.99988,
+    "likelihood": 1,
+    "location": {
+      "start": 0,
+      "end": 8
+    },
+    "factType": "callday",
+    "data": {
+      "value": "Thursday"
+    }
+  },
+  {
+    "type": "Data",
+    "skill": "c56b26c18ac7f9edc41101bb14a31257:v2",
+    "weight": 0.9999,
+    "likelihood": 1,
+    "location": {
+      "start": 12,
+      "end": 19
+    },
+    "factType": "calltime",
+    "data": {
+      "value": "9:00 PM"
+    }
+  },
+  {
+    "type": "Intent",
+    "skill": "sentiment",
+    "weight": -1,
+    "likelihood": -1,
+    "location": {
+      "start": 0,
+      "end": 4
+    },
+    "intent": null,
+    "state": "neutral",
+    "sentenceType": "statement"
+  },
+  {
+    "type": "Intent",
+    "skill": "common_phrases",
+    "weight": -1,
+    "likelihood": -1,
+    "location": {
+      "start": 1,
+      "end": 4
+    },
+    "intent": "potential_call_later",
+    "state": "positive",
+    "sentenceType": "request"
+  }
+]
+human: thursday at 9:00 PM
+ai: I'm sorry, let me transfer you to another agent. Please stand by!

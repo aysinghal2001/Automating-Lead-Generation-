@@ -35,7 +35,7 @@ node hello
 {
     do
     {
-        #sayText("Hi " + $name + " this is Dasha with ACME. Thank you so much for reaching out to us on our website.");
+        #sayText("Hi " + $name +   "   this is Dasha from EduTekZila support. Thank you so much for reaching out to us on our website.");
         #sayText("Is it okay if I ask you a few questions?");
         wait*;
     }
@@ -51,8 +51,8 @@ node question_1
     do 
     {
         if ($visitedNodeQuestion1==false) 
-        #sayText("Great! Are you using any invoicing software already?");
-        else #sayText("Going back to the question 1. Are you using any invoicing software already?"); 
+        #sayText("Great! Do you have a website or an applicatio for your business?");
+        else #sayText("Going back to the question 1. Do you have a website or an applicatio for your business?"); 
         set $visitedNodeQuestion1=true;
         wait *;
     }
@@ -67,7 +67,7 @@ node question_1_a
 {
     do 
     {
-        #sayText("Great and what software are you using?");
+        #sayText("Great and what is the name of your business?");
         wait *;
     }
     transitions 
@@ -87,8 +87,8 @@ node question_2
 {
     do 
     {
-        set $software = "not using any invoicing software now";
-        #sayText("Thank you for that. Question 2. How many invoices per month do you generally issue?");
+        set $software = "not having any website/application";
+        #sayText("Thank you for that. Question 2. How many invoices per month do you generally issue for your business?");
         wait *;
     }
     transitions 
@@ -231,7 +231,7 @@ digression connect_me
     do 
     {
         #sayText("Certainly. Please hold, I will now transfer you. Good bye!");
-        #forward("79231017918");
+        #forward("918766330253");
     }
 }
 
@@ -253,7 +253,7 @@ digression transfer_me
     do 
     {
         #sayText("Certainly. Please hold, I will transfer you to an account executive right away. Good bye!");
-        #forward("12223334455");
+        #forward("918766330253");
     }
 }
 
